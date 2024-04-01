@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+label, button {
+    color: #1D212C;
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+input {
+    border-radius: 8px;
+    border-style: solid;
+    height: 25px;
+    padding: 8px;
+    font-size: 1.1rem;
+}
+
+button {
+    border-style: none;
+    border-radius: 8px;
+    width: 60px;
+    height: 30px;
+    color: black;
+}
+
+.weather-rn {
+    height: 300px;
+    width: 300px;
+    color: black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    opacity: 0;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.name {
+    font-size: 2rem;
+    color: black;
+}
+
+.temperature {
+    font-size: 2rem;
+}
+
+.feels-like {
+    font-size: 1.5rem;
+}
+
+.humidity {
+    font-size: 1.5rem;
+}
+
+.wind {
+    font-size: 1.5rem;
+}
+
+.error {
+    margin: 8px 0 0 90px;
+    display: block;
+    color: red;
+    font-size: 90%;
+}
