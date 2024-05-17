@@ -35,7 +35,6 @@ function getWeather(city) {
     return new Promise(function (resolve, reject) {
         fetch(`https://api.weatherapi.com/v1/current.json?key=7d735418b7924349b68113618243103&q=${city}`, {mode: 'cors'})
             .then(response => {
-                console.log(response)
                 if (response.status === 400) {
                     errorMsg.textContent = `Please enter valid name`
                     throw new Error(`Please enter valid name`)
